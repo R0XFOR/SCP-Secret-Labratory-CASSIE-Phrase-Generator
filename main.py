@@ -31,7 +31,7 @@ class SCPSounds:
             return False
     
     def word_play(self, word: str) -> None:
-        clean_word = word.lower().removesuffix('.').removesuffix(',')
+        clean_word = word.removesuffix('.').removesuffix(',')
         word_suffix = word[-1] if word[-1] == '.' or word[-1] == ',' else ''
         if len(clean_word) != 0:
             if clean_word not in self.sounds:
