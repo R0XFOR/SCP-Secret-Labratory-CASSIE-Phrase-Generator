@@ -19,9 +19,9 @@ class SCPSounds:
                 self.sounds[sound_name] = f'{path}/{i}'
             sounds_cound = len(self.sounds)
             if sounds_cound == 0:
-                print(f'No wav or mp3 sounds detected.')
+                print(f'FATAL: no wav or mp3 sounds detected.')
                 return False
-            print(f'Got {sounds_cound} sounds.')
+            print(f'INFO: got {sounds_cound} sounds.')
             return True
         except FileNotFoundError:
             print('FATAL: folder not found.')
